@@ -1,0 +1,158 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    /*font-family: 'Inter', serif;*/
+
+}
+/*Css start for Smooth transition from one frame to other in respnsiveness*/
+*{
+    -webkit-transition:all 1s ease;
+    -moz-transition:all 1s ease;
+    -o-transition:all 1s ease;
+    transition:all 1s ease;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+/*Css end for Smooth transition from one frame to other in respnsiveness*/
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 1440px;
+    height:3749px;
+    margin: auto;
+}
+.small_common_margin{
+    margin-left: 6%;
+    margin-right: 6%;
+}
+.big_common_margin{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+header{
+    background-color: #06070b;
+    height: auto;
+}
+.navbar{
+    height: 100px;
+    background-color:#06070b;
+    display: flex;
+    align-items: center;
+    margin: 0 2%;
+}
+.page_logo{
+ width: 17%;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 1%;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+.search_icon{
+ margin-left: 1%;
+}
+.headerContact{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 2%;
+}
+.headerContact a{
+    text-decoration: none;
+    color: #f16623;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 1%;
+    width: 15%;
+    display: flex;
+    column-gap: 2%;
+}
+.headerContact img{
+    width: 20%;
+}
+#imageRotate{
+    width: 70%;
+    height: 400px;
+   margin:auto;
+   background-size: 100% 100%;
+   box-shadow: 3px 4px 10px 5px #06070b;
+   background-image: url('../images/279861367_166581395758646_2238889912345230059_n.jpg');
+   animation: slider 9s infinite linear;
+}
+
+@keyframes slider{
+    0%{
+        background-image: url('../images/280083725_166582149091904_2212883769636875103_n.jpg');
+    }
+    35%{
+        background-image: url('../images/280189630_166578945758891_8339498099705573213_n.jpg');
+    }
+    75%{
+        background-image: url('../images/280267986_167256815691104_12223412858199006_n.jpg');
+    }
+}
+
